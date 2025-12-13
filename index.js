@@ -660,8 +660,5 @@ app.listen(PORT, '0.0.0.0', () => {
 		console.log('  🎲 Pull down to shuffle!');
 		console.log('  📱 Back button supported!');
 		console.log('══════════════════════════════════════');
-<<<<<<< HEAD
 });
-=======
 });
->>>>>>> e92fc8a (Descripción de tus cambios)
