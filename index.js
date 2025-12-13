@@ -956,6 +956,7 @@ const HTML = `<!DOCTYPE html>
 </html>`;
 
 // Servir la página principal
+app.get('/health', (req, res) => { res.status(200).send('OK'); });
 app.get('/', (req, res) => {
 		res.setHeader('Content-Type', 'text/html');
 		res.send(HTML);
