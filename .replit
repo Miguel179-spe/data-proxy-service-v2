@@ -1,0 +1,13 @@
+run = "npm start"
+entrypoint = "index.js"
+modules = ["nodejs-20"]
+
+[nix]
+channel = "stable-22_11"
+
+[[ports]]
+localPort = 3000
+externalPort = 80
+
+[agent]
+expertMode = true
