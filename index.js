@@ -112,7 +112,7 @@ app.get('/api/stats', (req, res) => {
 
 app.get('/api/series', (req, res) => {
     const page = parseInt(req.query.page) || 0;
-    const limit = parseInt(req.query.limit) || 50;
+    const limit = parseInt(req.query.limit) || 250;
     const search = (req.query.q || '').toLowerCase();
     const random = req.query.random === 'true';
 
