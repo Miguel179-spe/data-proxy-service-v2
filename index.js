@@ -277,7 +277,7 @@ const HTML = `<!DOCTYPE html>
             if(append&&!state.hasMore)return;
             state.loading=true;
             if(!append){el.grid.innerHTML='<div class="loading">Cargando...</div>';state.page=0;state.hasMore=true;state.series=[];}
-            let url='/api/series?page='+state.page+'&limit=50';
+            let url='/api/series?page='+state.page+'&limit=250';
             if(state.search)url+='&q='+encodeURIComponent(state.search);
             if(random)url+='&random=true';
             fetch(url).then(r=>r.json()).then(data=>{
